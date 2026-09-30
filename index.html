@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="CombaT7 — an ERC-funded consortium decoding the type VII secretion system behind mycobacterial infection and microbial warfare.">
+<meta name="description" content="CombaT7 is an ERC-funded consortium decoding the type VII secretion system behind mycobacterial infection and microbial warfare.">
 <meta name="author" content="CombaT7 Consortium">
 <link rel="icon" href="logo_c7.png" type="image/png">
-<title>CombaT7 — Uncovering bacteria's secret weapons</title>
+<title>CombaT7 | Uncovering bacteria's secret weapons</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -94,6 +94,20 @@
   details.person .socials img{ height:26px; width:26px; }
   details.person .socials img.li{ border-radius:6px; }
 
+  /* BLOG */
+  .blog-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:26px; align-items:start; }
+  a.post{ display:flex; flex-direction:column; background:#fff; border:1px solid #e7e2d6; border-radius:18px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(20,40,80,.05); transition:transform .2s, box-shadow .2s, border-color .2s; }
+  a.post:hover{ transform:translateY(-4px); box-shadow:0 16px 40px rgba(20,40,80,.12); border-color:rgba(230,181,60,.5); }
+  a.post .thumb{ aspect-ratio:16/9; background:#eef0f5 center/cover no-repeat; border-bottom:1px solid #e7e2d6; }
+  a.post .pbody{ padding:22px 22px 24px; display:flex; flex-direction:column; flex:1; }
+  a.post .ptag{ display:flex; align-items:center; gap:10px; font-family:'Space Grotesk',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:12px; }
+  a.post .ptag .dot{ width:4px; height:4px; border-radius:50%; background:#cdd2dd; }
+  a.post .ptag .date{ color:#9aa0b0; letter-spacing:.5px; }
+  a.post h3{ font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; line-height:1.25; color:var(--navy); margin:0 0 10px; }
+  a.post p.excerpt{ font-size:14.5px; color:#5a6072; line-height:1.6; margin:0 0 18px; }
+  a.post .readmore{ margin-top:auto; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13.5px; color:var(--navy); display:inline-flex; align-items:center; gap:6px; }
+  a.post:hover .readmore{ color:#a87f14; }
+
   /* FOOTER */
   footer.site{ background:var(--navy); color:#b9c3d6; margin-top:80px; padding:56px 24px 40px; }
   footer.site .inner{ max-width:880px; margin:0 auto; text-align:center; }
@@ -117,6 +131,7 @@
     <a href="#objectives">Objectives</a>
     <a href="#teams">Consortium</a>
     <a href="#members">Researchers</a>
+    <a href="#blog">Blog</a>
   </div>
 </nav>
 
@@ -127,7 +142,7 @@
     <img class="crest" src="logo_c7.png" alt="CombaT7 logo">
     <h1>Comba<span class="gold">T7</span></h1>
     <p class="tag">Uncovering bacteria&rsquo;s secret weapons</p>
-    <p class="sub">An ERC-funded consortium decoding the type VII secretion system &mdash; the molecular machinery behind mycobacterial infection and microbial warfare.</p>
+    <p class="sub">An ERC-funded consortium decoding the type VII secretion system, the molecular machinery behind mycobacterial infection and microbial warfare.</p>
     <div style="margin-top:30px;">
       <img class="eu-badge" src="eu_logo.png" alt="EU Horizon Europe">
     </div>
@@ -144,8 +159,8 @@
   <div class="eyebrow"><span>The Project</span><span class="rule"></span></div>
   <h2 class="sec">A bacterial weapon hidden in plain sight</h2>
   <div class="lead">
-    <p>For years, scientists thought specialised secretion systems were exclusive to Gram-negative bacteria. But Gram-positive bacteria &mdash; including harmful pathogens like <em class="sp">Mycobacterium tuberculosis</em> &mdash; have a powerful exception: the <strong>type VII secretion system (T7SS)</strong>.</p>
-    <p>This complex machinery does not just export proteins involved in infection; it also plays a surprising role in microbial warfare between bacteria. The ERC-funded CombaT7 project brings together top researchers to decode the mysteries of T7SS in important mycobacterial pathogens like <em class="sp">M.&nbsp;tuberculosis</em> and <em class="sp">M.&nbsp;abscessus</em>. Using cutting-edge tools like cryo-EM and lung-on-a-chip models, the team will map the system&rsquo;s structure, identify new protein targets, and uncover how it influences both disease and bacterial competition &mdash; laying the groundwork for new ways to fight infection.</p>
+    <p>For years, scientists thought specialised secretion systems were exclusive to Gram-negative bacteria. But Gram-positive bacteria, including harmful pathogens like <em class="sp">Mycobacterium tuberculosis</em>, have a powerful exception: the <strong>type VII secretion system (T7SS)</strong>.</p>
+    <p>This complex machinery does not just export proteins involved in infection; it also plays a surprising role in microbial warfare between bacteria. The ERC-funded CombaT7 project brings together top researchers to decode the mysteries of T7SS in important mycobacterial pathogens like <em class="sp">M.&nbsp;tuberculosis</em> and <em class="sp">M.&nbsp;abscessus</em>. Using cutting-edge tools like cryo-EM and lung-on-a-chip models, the team will map the system&rsquo;s structure, identify new protein targets, and uncover how it influences both disease and bacterial competition, laying the groundwork for new ways to fight infection.</p>
   </div>
 </section>
 
@@ -348,6 +363,25 @@
         <p class="bio">My research focuses on the ESX-1 Type VII secretion system in mycobacteria, with an emphasis on the secretion and function of the virulence-associated Esp proteins. Using molecular and biochemical techniques, I contribute to studies investigating how these proteins are exported, and their role in hemolysis and infection. Through supporting a range of research projects, my work helps advance our understanding of mycobacterial secretion systems and the mechanisms that enable infection.</p>
       </div>
     </details>
+
+  </div>
+</section>
+
+<section id="blog" class="wrap-wide" style="padding-top:72px;">
+  <div class="eyebrow"><span>Blog</span><span class="rule"></span></div>
+  <h2 class="sec" style="margin-bottom:12px;">From the lab</h2>
+  <p style="color:#6b7185; font-size:16px; margin:0 0 36px;">Stories, discoveries and perspectives from across the CombaT7 consortium.</p>
+  <div class="blog-grid">
+
+    <a class="post" href="blog/bacterial-warfare-mycobacterium-abscessus.html">
+      <div class="thumb" style="background-image:url('blog/img/gh183-toxin-immunity-complex-structure.jpg');"></div>
+      <div class="pbody">
+        <div class="ptag"><span>Research</span><span class="dot"></span><span class="date">22 Jul 2026</span></div>
+        <h3>Bacterial Warfare: How <em class="sp">Mycobacterium abscessus</em> Fights Back</h3>
+        <p class="excerpt">Discover how <em class="sp">Mycobacterium abscessus</em> uses ESX-4 secretion systems and GH183 toxins to fight competing bacteria, and what it means for new antibiotic development.</p>
+        <span class="readmore">Read article &rarr;</span>
+      </div>
+    </a>
 
   </div>
 </section>
